@@ -1,0 +1,19 @@
+{
+    "name": "tenfish/wechat",
+    "description": "wechat SDK",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TenFish",
+            "email": "474260946@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "TenFish\\WeChat\\": "src/"
+        }
+    }
+}
