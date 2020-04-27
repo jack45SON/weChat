@@ -96,6 +96,17 @@ trait AcsTrait
         $this->redirectUri = Filter::checkString($redirectUri, 'redirectUri');
         return $this;
     }
+    /**
+     * scope
+     *
+     * @param string $scope
+     * @return void
+     */
+    public function scope(string $scope)
+    {
+        $this->scope = Filter::checkString($scope, 'scope');
+        return $this;
+    }
 
     /**
      * httpsRequest

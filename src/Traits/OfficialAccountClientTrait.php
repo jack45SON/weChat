@@ -22,9 +22,4 @@ trait OfficialAccountClientTrait
     {
         return new UserInfoClient;
     }
-
-    public static function CodeClient()
-    {
-        return new CodeClient();
-    }
 }
