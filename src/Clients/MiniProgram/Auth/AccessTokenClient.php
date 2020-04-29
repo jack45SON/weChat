@@ -1,5 +1,5 @@
 <?php
-namespace TenFish\WeChat\Clients\OfficialAccount\Oauth;
+namespace TenFish\WeChat\Clients\MiniProgram\Auth;
 
 use TenFish\WeChat\Clients\CoreClient;
 use TenFish\WeChat\Interfaces\ClientInterface;
@@ -23,6 +23,6 @@ final class AccessTokenClient extends CoreClient implements ClientInterface
      */
     public function getUrl()
     {
-        return sprintf('https://api.weixin.qq.com/cgi-bin/oauth2/access_token?appid=%s&secret=%s&code=%s&grant_type=authorization_code', $this->appId, $this->secret, $this->code);
+        return sprintf('https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=%s&secret=%s', $this->config['appId'], $this->config['secret']);
     }
 }

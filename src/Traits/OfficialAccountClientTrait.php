@@ -7,12 +7,6 @@ use TenFish\WeChat\Clients\OfficialAccount\Oauth\CodeClient;
 
 trait OfficialAccountClientTrait
 {
-    /**
-     * @var array Containers of Clients
-     */
-    protected static $clients = [];
-
-
     public static function CodeClient()
     {
         return new CodeClient();

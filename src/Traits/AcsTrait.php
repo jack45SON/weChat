@@ -6,115 +6,37 @@ use TenFish\WeChat\Filters\Filter;
 
 trait AcsTrait
 {
-    public $appId;
-    public $secret;
+    public $config;
     public $accessToken;
-    public $action;
-    public $redirectUri;
-    public $options;
 
     /**
-     * appId
-     *
-     * @param string $appId
-     * @return void
+     * @Title: config
+     * @param array $config
+     * @return $this
      */
-    public function appId(string $appId)
+    public function config(array $config)
     {
-        $this->appId = Filter::checkString($appId,'appId');
+        $this->config = Filter::checkArray($config,'config');
         return $this;
     }
 
     /**
-     * secret
-     *
-     * @param string $secret
-     * @return void
-     */
-    public function secret(string $secret)
-    {
-        $this->secret = Filter::checkString($secret, 'secret');
-        return $this;
-    }
-
-    /**
-     * accessToken
-     *
+     * @Title: accessToken
      * @param string $accessToken
-     * @return void
+     * @return $this
      */
     public function accessToken(string $accessToken)
     {
-        $this->accessToken = Filter::checkString($accessToken, 'accessToken');
+        $this->accessToken = Filter::checkString($accessToken,'accessToken');
         return $this;
     }
 
     /**
-     * action
-     *
-     * @param string $action
-     * @return void
-     */
-    public function action(string $action)
-    {
-        $this->action = Filter::checkString($action, 'action');
-        return $this;
-    }
-
-    /**
-     * openId
-     *
-     * @param string $openId
-     * @return void
-     */
-    public function openId(string $openId)
-    {
-        $this->openId = Filter::checkString($openId, 'openId');
-        return $this;
-    }
-
-    /**
-     * options
-     *
-     * @param array $options
-     * @return void
-     */
-    public function options(array $options)
-    {
-        $this->options = $options;
-        return $this;
-    }
-
-    /**
-     * redirectUri
-     *
-     * @param string $redirectUri
-     * @return void
-     */
-    public function redirectUri(string $redirectUri)
-    {
-        $this->redirectUri = Filter::checkString($redirectUri, 'redirectUri');
-        return $this;
-    }
-    /**
-     * scope
-     *
-     * @param string $scope
-     * @return void
-     */
-    public function scope(string $scope)
-    {
-        $this->scope = Filter::checkString($scope, 'scope');
-        return $this;
-    }
-
-    /**
-     * httpsRequest
-     *
-     * @param [type] $url
+     * @Title: httpsRequest
+     * @param $url
      * @param array $data
-     * @param integer $second
-     * @return void
+     * @param int $second
+     * @return array|mixed
      */
     public function httpsRequest($url, array $data = array(), int $second = 30)
     {

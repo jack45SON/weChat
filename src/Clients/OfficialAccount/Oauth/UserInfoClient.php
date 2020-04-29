@@ -9,7 +9,7 @@ use TenFish\WeChat\Interfaces\ClientInterface;
  */
 final class UserInfoClient extends CoreClient implements ClientInterface
 {
-
+    private $openId;
 
     public function __construct()
     {
@@ -23,14 +23,17 @@ final class UserInfoClient extends CoreClient implements ClientInterface
      */
     public function returnResponse()
     {
-        if(!$this->accessToken || !$this->openId){
-            $url = sprintf('https://api.weixin.qq.com/cgi-bin/oauth2/access_token?appid=%s&secret=%s&code=%s&grant_type=authorization_code', $this->appId, $this->secret, $this->code);
+        if(!$this->accessToken){
+            $url = sprintf('https://api.weixin.qq.com/sns/oauth2/access_token?appid=%s&secret=%s&code=%s&grant_type=authorization_code', $this->config['appId'], $this->config['secret'], $this->config['code']);
             $access_token_result    = $this->httpsRequest($url);
+            if(isset($access_token_result['errcode'])){
+                return $access_token_result;
+            }
             $this->accessToken      = $access_token_result['access_token'];
             $this->openId           = $access_token_result['openid'];
         }
 
-        $ret  = $this->httpsRequest($this->getUrl(), $this->options);
+        $ret  = $this->httpsRequest($this->getUrl(), $this->config['options']);
         return $ret;
     }
 
