@@ -9,7 +9,7 @@
             "email": "474260946@qq.com"
         }
     ],
-    "minimum-stability": "1.0.0",
+    "minimum-stability": "dev",
     "require": {},
     "autoload": {
         "psr-4": {
