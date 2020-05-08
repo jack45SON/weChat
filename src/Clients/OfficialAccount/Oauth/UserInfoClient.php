@@ -17,9 +17,9 @@ final class UserInfoClient extends CoreClient implements ClientInterface
     }
 
     /**
-     * returnResponse
-     *
-     * @return void
+     * @Title: returnResponse
+     * @Description: todo()
+     * @return array|mixed
      */
     public function returnResponse()
     {
@@ -38,9 +38,9 @@ final class UserInfoClient extends CoreClient implements ClientInterface
     }
 
     /**
-     * getUrl
-     *
-     * @return void
+     * @Title: getUrl
+     * @Description: todo()
+     * @return string
      */
     public function getUrl()
     {

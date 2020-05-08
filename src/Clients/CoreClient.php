@@ -14,23 +14,22 @@ class CoreClient
     {
     }
 
-
     /**
-     * returnResponse
-     *
-     * @return void
+     * @Title: returnResponse
+     * @Description: todo()
+     * @return array|mixed
      */
     public function returnResponse()
     {
-        $ret  = $this->httpsRequest($this->getUrl(), $this->options);
+        $ret  = $this->httpsRequest($this->getUrl(), $this->config['options']);
         return $ret;
     }
 
     /**
-     * getUrl
-     *
-     * @return void
+     * @Title: getUrl
+     * @Description: todo()
      */
     public function getUrl(){
+        return '';
     }
 }

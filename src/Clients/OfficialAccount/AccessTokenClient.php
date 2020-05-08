@@ -4,9 +4,6 @@ namespace TenFish\WeChat\Clients\OfficialAccount;
 use TenFish\WeChat\Clients\CoreClient;
 use TenFish\WeChat\Interfaces\ClientInterface;
 
-/**
- * Login
- */
 final class AccessTokenClient extends CoreClient implements ClientInterface
 {
 
@@ -17,9 +14,9 @@ final class AccessTokenClient extends CoreClient implements ClientInterface
     }
 
     /**
-     * getUrl
-     *
-     * @return void
+     * @Title: getUrl
+     * @Description: todo()
+     * @return string
      */
     public function getUrl()
     {

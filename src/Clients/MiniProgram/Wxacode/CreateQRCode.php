@@ -13,9 +13,9 @@ final class CreateQRCode extends CoreClient implements ClientInterface
     }
 
     /**
-     * getUrl
-     *
-     * @return void
+     * @Title: getUrl
+     * @Description: todo()
+     * @return string
      */
     public function getUrl()
     {

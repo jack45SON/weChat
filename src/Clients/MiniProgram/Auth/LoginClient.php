@@ -18,9 +18,9 @@ final class LoginClient extends CoreClient implements ClientInterface
     }
 
     /**
-     * returnResponse
-     *
-     * @return void
+     * @Title: returnResponse
+     * @Description: todo()
+     * @return array|mixed
      */
     public function returnResponse()
     {
@@ -36,9 +36,9 @@ final class LoginClient extends CoreClient implements ClientInterface
     }
 
     /**
-     * _codeSession
-     *
-     * @return void
+     * @Title: codeSession
+     * @Description: todo()
+     * @return array|mixed
      */
     private function codeSession()
     {
@@ -47,9 +47,9 @@ final class LoginClient extends CoreClient implements ClientInterface
     }
 
     /**
-     * getUrl
-     *
-     * @return void
+     * @Title: getUrl
+     * @Description: todo()
+     * @return string
      */
     public function getUrl()
     {
@@ -68,9 +68,9 @@ final class LoginClient extends CoreClient implements ClientInterface
     }
 
     /**
-     * _decryptData
-     *
-     * @return void
+     * @Title: decryptData
+     * @Description: todo()
+     * @return array
      */
     private function decryptData()
     {

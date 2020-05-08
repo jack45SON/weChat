@@ -11,17 +11,16 @@ final class CodeClient extends CoreClient
 {
     /**
      * returnResponse
-     *
-     * @return void
      */
     public function returnResponse()
     {
         return '';
     }
+
     /**
-     * getUrl
-     *
-     * @return void
+     * @Title: getUrl
+     * @Description: todo()
+     * @return string
      */
     public function getUrl()
     {
