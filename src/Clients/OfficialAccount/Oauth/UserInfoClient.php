@@ -33,7 +33,7 @@ final class UserInfoClient extends CoreClient implements ClientInterface
             $this->openId           = $access_token_result['openid'];
         }
 
-        $ret  = $this->httpsRequest($this->getUrl(), $this->config['options']);
+        $ret  = $this->httpsRequest($this->getUrl());
         return $ret;
     }
 

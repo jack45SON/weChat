@@ -15,23 +15,23 @@ trait OfficialAccountClientTrait
         return new CodeClient();
     }
 
-    public static function UserInfoClient()
+    public static function OAUserInfoClient()
     {
         return new UserInfoClient();
     }
 
-    public static function AccessTokenClient()
+    public static function OAAccessTokenClient()
     {
         return new AccessTokenClient();
     }
 
-    public static function TicketClient()
+    public static function OATicketClient()
     {
         return new TicketClient();
     }
 
 
-    public static function ShareClient()
+    public static function OAShareClient()
     {
         return new ShareClient();
     }

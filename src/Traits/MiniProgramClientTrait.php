@@ -8,17 +8,17 @@ use TenFish\WeChat\Clients\MiniProgram\Wxacode\CreateQRCode;
 
 trait MiniProgramClientTrait
 {
-    public static function AuthLogin()
+    public static function MiniAuthLoginClient()
     {
         return new LoginClient();
     }
 
-    public static function AccessToken()
+    public static function MiniAccessTokenClient()
     {
         return new AccessTokenClient();
     }
 
-    public static function CreateQRCode()
+    public static function MiniCreateQRCodeClient()
     {
         return new CreateQRCode();
     }
