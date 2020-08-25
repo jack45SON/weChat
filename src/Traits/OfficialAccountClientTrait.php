@@ -6,6 +6,7 @@ use TenFish\WeChat\Clients\OfficialAccount\AccessTokenClient;
 use TenFish\WeChat\Clients\OfficialAccount\Oauth\UserInfoClient;
 use TenFish\WeChat\Clients\OfficialAccount\Oauth\CodeClient;
 use TenFish\WeChat\Clients\OfficialAccount\ShareClient;
+use TenFish\WeChat\Clients\OfficialAccount\TemplateClient;
 use TenFish\WeChat\Clients\OfficialAccount\TicketClient;
 
 trait OfficialAccountClientTrait
@@ -30,9 +31,13 @@ trait OfficialAccountClientTrait
         return new TicketClient();
     }
 
-
     public static function OAShareClient()
     {
         return new ShareClient();
+    }
+
+    public static function OATemplateClient()
+    {
+        return new TemplateClient();
     }
 }
